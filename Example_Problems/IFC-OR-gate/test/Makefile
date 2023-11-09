@@ -1,12 +1,12 @@
 SIM ?= icarus
 TOPLEVEL_LANG ?= verilog
 PWD = $(shell pwd)
-VERILOG_SOURCES += $(PWD)/Wrappers/ifc_test.v
-VERILOG_SOURCES += $(PWD)/Wrappers/or_test.v
-VERILOG_SOURCES += $(PWD)/HDL/ifc_or.v
-VERILOG_SOURCES += $(PWD)/HDL/or_gate.v
-VERILOG_SOURCES += $(PWD)/HDL/FIFO1.v
-VERILOG_SOURCES += $(PWD)/HDL/FIFO2.v
+VERILOG_SOURCES += $(PWD)/wrappers/ifc_test.v
+VERILOG_SOURCES += $(PWD)/wrappers/or_test.v
+VERILOG_SOURCES += $(PWD)/../hdl/ifc_or.v
+VERILOG_SOURCES += $(PWD)/../hdl/or_gate.v
+VERILOG_SOURCES += $(PWD)/../hdl/FIFO1.v
+VERILOG_SOURCES += $(PWD)/../hdl/FIFO2.v
 all: ifc
 
 ifc : 
